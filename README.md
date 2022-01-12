@@ -1,4 +1,4 @@
-## Simulation 5G network and Testing with Virtual UE.
+## Simulation 5G network and Testing with Virtual UE
 
 ---
 
@@ -7,7 +7,7 @@
 - [Network Topology and Simulation Model](#id-overview)
 - [Initial Preparation](#id-init)
 - [Software Configulation](#id-configure)
-- [Testing](#id-testing)
+- [Simulation Testing](#id-testing)
 - [Reference](#id-reference)
 
 ---
@@ -55,7 +55,7 @@
 
 <div id='id-testing'/>
 
-## Testing
+## Simulation Testing
 
 ---
 
