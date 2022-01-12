@@ -1,7 +1,6 @@
-## Simulation 5G network of Basic Network Topology and testing with Virtual UE.
+## Simulation 5G network and Testing with Virtual UE.
 
 ---
-
 
 ## Table of Contents
 - [Software and Hardware](#id-specification)
@@ -51,8 +50,6 @@
 <div id='id-configure'/>
 
 ## Software Configuration
-
-
 
 ---
 
