@@ -66,17 +66,25 @@ sudo vim /etc/netplan/00-installer-config.yaml
 netplan apply
 ~~~
 
-Static IP configuration of **00-installer-config.yaml**
+Configure of of **00-installer-config.yaml**
+
+> Static IP configuration
 ~~~
 network:
-    version: 2
-      ethernets:
-          enp0s3:
-              addresses: [192.168.0.111/24]
-              dhcp4: false
+    ethernets:
+        enp0s3:
+            addresses: [192.168.0.111/24]
+        version: 2
 ~~~
 
-
+> Automatic (DHCP) IP configuration
+~~~
+network:
+    ethernets:
+        enp0s3:
+            dhcp4: true
+        version: 2
+~~~
 
 ### 2. Network Function (Open5GS)
 
