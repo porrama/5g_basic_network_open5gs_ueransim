@@ -1,4 +1,4 @@
-## Simulation 5G network and Testing with Virtual UE
+## Simulation 5G network with Virtual RAN and UE
 
 ---
 
@@ -66,14 +66,14 @@ sudo vim /etc/netplan/00-installer-config.yaml
 netplan apply
 ~~~
 
-Configure of of **00-installer-config.yaml**
+Options to configure **00-installer-config.yaml** file
 
 > Static IP configuration
 ~~~
 network:
     ethernets:
         enp0s3:
-            addresses: [192.168.0.111/24]
+            addresses: [192.168.0.1/24]
         version: 2
 ~~~
 
