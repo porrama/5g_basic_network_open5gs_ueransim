@@ -45,11 +45,44 @@
 
 ## Initial Preparation
 
+### 1. [Open5GS software](https://github.com/porrama/install_open5gs) 
+- VM#1 (Core Network)
+
+### 2. [UERANSIM software](https://github.com/porrama/install_ueransim) 
+- VM#2 (RAN gNodeB)
+- VM#3 (RAN UE)
+
 ---
 
 <div id='id-configure'/>
 
 ## Software Configuration
+
+### 1. IP Setting (Ubuntu Server)
+
+Command for IP Configuration
+~~~
+sudo vim /etc/netplan/00-installer-config.yaml
+netplan apply
+~~~
+
+Static IP configuration of **00-installer-config.yaml**
+~~~
+network:
+    version: 2
+      ethernets:
+          enp0s3:
+              addresses: [192.168.0.111/24]
+              dhcp4: false
+~~~
+
+
+
+### 2. Network Function (Open5GS)
+
+### 3. RAN gNodeB (UERANSIM)
+
+### 4. RAN UE (UERANSIM)
 
 ---
 
