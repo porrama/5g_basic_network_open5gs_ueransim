@@ -58,7 +58,15 @@
 
 ## Software Configuration
 
-### 1. IP Setting (Ubuntu Server)
+### 1. Network Setting of in VirtualBox
+
+- VM#1
+
+
+- VM#2 and VM#3
+
+
+### 2. IP Setting (Ubuntu Server)
 
 Command for IP Configuration
 ~~~
@@ -86,11 +94,11 @@ network:
         version: 2
 ~~~
 
-### 2. Network Function (Open5GS)
+### 3. Network Function (Open5GS)
 
-### 3. RAN gNodeB (UERANSIM)
+### 4. RAN gNodeB (UERANSIM)
 
-### 4. RAN UE (UERANSIM)
+### 5. RAN UE (UERANSIM)
 
 ---
 
