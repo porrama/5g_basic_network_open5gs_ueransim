@@ -60,11 +60,13 @@
 
 ### 1. Network Setting of in VirtualBox
 
-- VM#1
+Setting -> Network -> Choose the Adapter and ***Enable Network Adapter*** Option
 
-
-- VM#2 and VM#3
-
+| Virsual Box Number | Role             | Adapter                                   |
+| -----------        | -----------      | -----------                               |
+| VM#1               | Core Network     | #1 Host Only Adapter <br/> #2 NAT Network |
+| VM#2               | RAN gNodeB       | #1 Host Only Adapter                      |
+| VM#3               | RAN UE           | #1 Host Only Adapter                      |
 
 ### 2. IP Setting (Ubuntu Server)
 
