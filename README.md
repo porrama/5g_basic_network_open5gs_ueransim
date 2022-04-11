@@ -83,7 +83,7 @@ cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
 sudo rm /etc/netplan/00-installer-config.yaml
 ~~~
 ~~~
-cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
+sudo cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
 sudo netplan apply
 ~~~
 
@@ -117,7 +117,7 @@ network:
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
 sudo rm /etc/sysctl.conf
-cp sysctl.conf /etc/sysctl.conf
+sudo cp sysctl.conf /etc/sysctl.conf
 ~~~
 
 ### 3. Network Function (Open5GS)
