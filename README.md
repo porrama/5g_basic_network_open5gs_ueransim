@@ -70,7 +70,14 @@ Setting -> Network -> Choose the Adapter and ***Enable Network Adapter*** Option
 
 ### 2. IP Setting (Ubuntu Server)
 
-Command for IP Configuration
+Command for IP Configuration (Optional)
+- Configuration File
+~~~
+cd ~/simulate_5g_basic_open5gs_ueransim/
+rm /etc/netplan/00-installer-config.yaml
+cp ../core_configuration_file/00-installer-config.yaml /etc/netplan/00-installer-config.yaml
+~~~
+- Manual
 ~~~
 sudo vim /etc/netplan/00-installer-config.yaml
 netplan apply
