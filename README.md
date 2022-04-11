@@ -70,13 +70,15 @@ Setting -> Network -> Choose the Adapter and ***Enable Network Adapter*** Option
 
 ### 2. IP Setting (Ubuntu Server)
 
-Command for IP Configuration (Optional)
+2.1 Command for IP Configuration (Optional)
 - Configuration File
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/
 rm /etc/netplan/00-installer-config.yaml
 cp ../core_configuration_file/00-installer-config.yaml /etc/netplan/00-installer-config.yaml
+netplan apply
 ~~~
+
 - Manual
 ~~~
 sudo vim /etc/netplan/00-installer-config.yaml
@@ -101,6 +103,12 @@ network:
         enp0s3:
             dhcp4: true
         version: 2
+~~~
+
+2.2 Network settings < net.ipv4.ip_forward=1 >
+~~~
+rm /etc/sysctl.conf
+cp ../core_configuration_file/sysctl.conf /etc/sysctl.conf
 ~~~
 
 ### 3. Network Function (Open5GS)
