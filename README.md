@@ -80,7 +80,7 @@ Setting -> Network -> Choose the Adapter and ***Enable Network Adapter*** Option
 - Configuration File
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
-rm /etc/netplan/00-installer-config.yaml
+sudo rm /etc/netplan/00-installer-config.yaml
 ~~~
 ~~~
 cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
@@ -116,7 +116,7 @@ network:
 2.2 Network settings < net.ipv4.ip_forward=1 >
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
-rm /etc/sysctl.conf
+sudo rm /etc/sysctl.conf
 cp sysctl.conf /etc/sysctl.conf
 ~~~
 
