@@ -1,0 +1,7 @@
+# corecontrol IP
+network:
+    version: 2
+    ethernets:
+        enp0s3:
+            addresses: [192.168.0.111/24]
+            dhcp4: false
