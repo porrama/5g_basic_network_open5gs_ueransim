@@ -138,8 +138,8 @@ cp smf.yaml ../../open5gs/install/etc/open5gs/smf.yaml
 - User Plane Function (UPF)
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
-rm ../../open5gs/install/etc/open5gs/umf.yaml
-cp umf.yaml ../../open5gs/install/etc/open5gs/umf.yaml
+rm ../../open5gs/install/etc/open5gs/upf.yaml
+cp upf.yaml ../../open5gs/install/etc/open5gs/upf.yaml
 ~~~
 
 ### 4. RAN gNodeB (UERANSIM)
