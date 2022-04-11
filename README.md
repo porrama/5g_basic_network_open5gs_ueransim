@@ -84,13 +84,13 @@ sudo rm /etc/netplan/00-installer-config.yaml
 ~~~
 ~~~
 cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
-netplan apply
+sudo netplan apply
 ~~~
 
 - Manual
 ~~~
 sudo vim /etc/netplan/00-installer-config.yaml
-netplan apply
+sudo netplan apply
 ~~~
 
 Options to configure **00-installer-config.yaml** file
