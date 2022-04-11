@@ -79,8 +79,10 @@ Setting -> Network -> Choose the Adapter and ***Enable Network Adapter*** Option
 2.1 Command for IP Configuration (Optional)
 - Configuration File
 ~~~
-cd ~/simulate_5g_basic_open5gs_ueransim
+cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
 rm /etc/netplan/00-installer-config.yaml
+~~~
+~~~
 cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
 netplan apply
 ~~~
@@ -113,7 +115,7 @@ network:
 
 2.2 Network settings < net.ipv4.ip_forward=1 >
 ~~~
-cd ~/simulate_5g_basic_open5gs_ueransim
+cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
 rm /etc/sysctl.conf
 cp sysctl.conf /etc/sysctl.conf
 ~~~
@@ -121,21 +123,21 @@ cp sysctl.conf /etc/sysctl.conf
 ### 3. Network Function (Open5GS)
 - Access and Mobility Management Function (AMF)
 ~~~
-cd ~/simulate_5g_basic_open5gs_ueransim
+cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
 rm ../../open5gs/install/etc/open5gs/amf.yaml
 cp amf.yaml ../../open5gs/install/etc/open5gs/amf.yaml
 ~~~
 
 -  Session Management Function (SMF)
 ~~~
-cd ~/simulate_5g_basic_open5gs_ueransim
+cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
 rm ../../open5gs/install/etc/open5gs/smf.yaml
 cp smf.yaml ../../open5gs/install/etc/open5gs/smf.yaml
 ~~~
 
 - User Plane Function (UPF)
 ~~~
-cd ~/simulate_5g_basic_open5gs_ueransim
+cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
 rm ../../open5gs/install/etc/open5gs/umf.yaml
 cp umf.yaml ../../open5gs/install/etc/open5gs/umf.yaml
 ~~~
