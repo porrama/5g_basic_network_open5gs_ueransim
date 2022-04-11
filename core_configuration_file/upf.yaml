@@ -150,9 +150,9 @@ logger:
 #
 upf:
     pfcp:
-      - addr: 192.168.0.112
+      - addr: 192.168.0.101
     gtpu:
-      - addr: 192.168.0.112
+      - addr: 192.168.0.101
     subnet:
       - addr: 10.45.0.1/16
         dnn: internet
