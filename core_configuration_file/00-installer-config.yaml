@@ -1,4 +1,4 @@
-# corecontrol IP
+# Core Network - Virtual Machine - IP address 
 network:
     version: 2
     ethernets:
