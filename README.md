@@ -16,6 +16,12 @@
 
 ## Software and Hardware
 
+Clone this project
+~~~
+cd ~
+git clone https://github.com/porrama/simulate_5g_basic_open5gs_ueransim
+~~~
+
 ### Hardware Specification
 | Module           | Detail                                         |
 | -----------      | -----------                                    |
