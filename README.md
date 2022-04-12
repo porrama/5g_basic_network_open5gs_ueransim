@@ -77,6 +77,7 @@ Setting -> Network -> Choose the Adapter and ***Enable Network Adapter*** Option
 ### 2. IP Setting (Ubuntu Server)
 
 2.1 Command for IP Configuration (Optional)
+
 - Configuration File
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
@@ -121,6 +122,7 @@ sudo cp sysctl.conf /etc/sysctl.conf
 ~~~
 
 ### 3. Network Function (Open5GS)
+
 - Access and Mobility Management Function (AMF)
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
@@ -152,6 +154,18 @@ cp upf.yaml ../../open5gs/install/etc/open5gs/upf.yaml
 
 ## Simulation Testing
 
+- Core Network
+
+Run **runnfv_open5gs.sh**
+~~~
+cd ~/open5gs/install/bin
+sudo sh ~/install_open5gs/runnfv_open5gs.sh
+~~~ 
+
+Run **runwebui_open5gs.sh**
+~~~
+cd ~/open5gs/webui
+npm run de
 ---
 
 <div id='id-reference'/>
