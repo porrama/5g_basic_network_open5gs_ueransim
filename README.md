@@ -70,9 +70,10 @@ Setting -> Network -> Choose the Adapter and ***Enable Network Adapter*** Option
 
 | Virsual Box Number | Role             | Adapter                                   |
 | -----------        | -----------      | -----------                               |
-| VM#1               | Core Network     | #1 Host Only Adapter <br/> #2 NAT Network |
+| VM#1               | Core Network     | #1 Host Only Adapter <br> #2 NAT Network  |
 | VM#2               | RAN gNodeB       | #1 Host Only Adapter                      |
-| VM#3               | RAN UE           | #1 Host Only Adapter                      |
+| VM#3               | RAN UE 1         | #1 Host Only Adapter                      |
+| VM#4               | RAN UE 2         | #1 Host Only Adapter                      |
 
 ### 2. IP Setting (Ubuntu Server)
 
@@ -144,6 +145,19 @@ rm ../../open5gs/install/etc/open5gs/upf.yaml
 cp upf.yaml ../../open5gs/install/etc/open5gs/upf.yaml
 ~~~
 
+- WebUI
+
+[Run WebUI](#id-webui) -> ***http://192.168.0.101:3000*** -> Login -> Subscriber Menu -> Click + Button -> Fill ***IMSI*** -> SAVE 
+
+> Username : admin <br>
+> Password : 1423
+
+| UE              | IMSI                | DNN                | OP/ OPc            |
+| -----------     | -----------         | -----------        | -----------        |
+| 1               | 001010000000000     | Internet           | OPc                | 
+| 2               | 001010000000001     | Internet           | OPc                |
+
+
 ### 4. RAN gNodeB (UERANSIM)
 
 ### 5. RAN UE (UERANSIM)
@@ -154,20 +168,19 @@ cp upf.yaml ../../open5gs/install/etc/open5gs/upf.yaml
 
 ## Simulation Testing
 
-- Core Network
-
 Run **runnfv_open5gs.sh**
 ~~~
 cd ~/open5gs/install/bin
 sudo sh ~/install_open5gs/runnfv_open5gs.sh
 ~~~ 
 
-Run **runwebui_open5gs.sh**
+<div id='id-webui'/>
+
+Run **runwebui_open5gs.sh** 
 ~~~
 cd ~/open5gs/webui
 sudo sh ~/install_open5gs/runwebui_open5gs.sh
 ~~~
-
 
 ---
 
