@@ -77,9 +77,9 @@ Setting -> Network -> Choose the Adapter and ***Enable Network Adapter*** Option
 
 ### 2. IP Setting (Ubuntu Server)
 
-2.1 Command for IP Configuration (Optional)
+2.1 Command for IP Configuration
 
-- Configuration File
+- Configuration File of ***Core Network - VM#1***
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
 sudo rm /etc/netplan/00-installer-config.yaml
@@ -89,31 +89,12 @@ sudo cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
 sudo netplan apply
 ~~~
 
-- Manual
+- Configuration File of ***RAN gNodeB - VM#2*** 
 ~~~
-sudo vim /etc/netplan/00-installer-config.yaml
-sudo netplan apply
 ~~~
-
-Options to configure **00-installer-config.yaml** file
-
-> Static IP configuration
 ~~~
-network:
-    ethernets:
-        enp0s3:
-            addresses: [192.168.0.1/24]
-        version: 2
 ~~~
 
-> Automatic (DHCP) IP configuration
-~~~
-network:
-    ethernets:
-        enp0s3:
-            dhcp4: true
-        version: 2
-~~~
 
 2.2 Network settings < net.ipv4.ip_forward=1 >
 ~~~
