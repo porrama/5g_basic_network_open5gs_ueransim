@@ -166,6 +166,8 @@ Run **runwebui_open5gs.sh**
 ~~~
 cd ~/open5gs/webui
 npm run de
+~~~
+
 ---
 
 <div id='id-reference'/>
