@@ -50,7 +50,8 @@
 
 ### 2. [UERANSIM software](https://github.com/porrama/install_ueransim) 
 - VM#2 (RAN gNodeB)
-- VM#3 (RAN UE)
+- VM#3 (RAN UE 1)
+- VM#4 (RAN UE 2)
 
 ---
 
