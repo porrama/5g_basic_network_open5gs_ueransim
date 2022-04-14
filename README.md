@@ -76,7 +76,7 @@ Setting -> Network -> Choose the Adapter and ***Enable Network Adapter*** Option
 | VM#3               | RAN UE 1         | #1 Host Only Adapter                      |
 | VM#4               | RAN UE 2         | #1 Host Only Adapter                      |
 
-### 2. IP Setting (Ubuntu Server)
+### 2. IP Setting
 
 2.1 Command for IP Configuration
 
