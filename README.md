@@ -110,7 +110,7 @@ sudo cp 00-installer-config-ue1.yaml /etc/netplan/00-installer-config.yaml
 sudo netplan apply
 ~~~
 
-- Configuration File of ***RAN UE2 - VM#4*** 
+- Configuration File of **RAN UE2 - VM#4**
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/ran_configuration_file
 sudo rm /etc/netplan/00-installer-config.yaml
@@ -208,13 +208,13 @@ cd ~/open5gs/webui
 sudo sh ~/install_open5gs/runwebui_open5gs.sh
 ~~~
 
-Run RAN-gNodeB
+Run **gNodeB**
 ~~~
 cd ~/UERANSIM/build/
 sudo ./nr-gnb -c ../config/open5gs-gnb.yaml
 ~~~
 
-Run RAN-UE1 and RAN-UE2
+Run **UE1 & UE2**
 ~~~
 cd ~/UERANSIM/build/
 sudo ./nr-ue -c ../config/open5gs-ue.yaml
