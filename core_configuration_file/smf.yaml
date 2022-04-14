@@ -332,7 +332,7 @@ smf:
       - addr: 127.0.0.4
         port: 7777
     pfcp:
-      - addr: 192.168.0.101
+      - addr: 192.168.0.111
       - addr: ::1
     gtpc:
       - addr: 127.0.0.4
@@ -438,7 +438,7 @@ nrf:
 #
 upf:
     pfcp:
-      - addr: 192.168.0.102
+      - addr: 192.168.0.111
         dnn: internet
 
 #
