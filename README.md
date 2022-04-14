@@ -208,6 +208,18 @@ cd ~/open5gs/webui
 sudo sh ~/install_open5gs/runwebui_open5gs.sh
 ~~~
 
+Run RAN-gNodeB
+~~~
+cd ~/UERANSIM/build/
+sudo ./nr-gnb -c ../config/open5gs-gnb.yaml
+~~~
+
+Run RAN-UE1 and RAN-UE2
+~~~
+cd ~/UERANSIM/build/
+sudo ./nr-ue -c ../config/open5gs-ue.yaml
+~~~
+
 ---
 
 <div id='id-reference'/>
