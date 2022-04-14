@@ -120,14 +120,7 @@ sudo cp 00-installer-config-ue2.yaml /etc/netplan/00-installer-config.yaml
 sudo netplan apply
 ~~~
 
-2.2 Network settings < net.ipv4.ip_forward=1 >
-~~~
-cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
-sudo rm /etc/sysctl.conf
-sudo cp sysctl.conf /etc/sysctl.conf
-~~~
-
-### 3. Network Function (Open5GS)
+### 3. Network Function & Network Setting (Open5GS)
 
 - Access and Mobility Management Function (AMF)
 ~~~
@@ -148,6 +141,13 @@ cp smf.yaml ../../open5gs/install/etc/open5gs/smf.yaml
 cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
 rm ../../open5gs/install/etc/open5gs/upf.yaml
 cp upf.yaml ../../open5gs/install/etc/open5gs/upf.yaml
+~~~
+
+- Network setting < net.ipv4.ip_forward=1 >
+~~~
+cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
+sudo rm /etc/sysctl.conf
+sudo cp sysctl.conf /etc/sysctl.conf
 ~~~
 
 - WebUI
