@@ -80,7 +80,7 @@ Setting -> Network -> Choose the Adapter and ***Enable Network Adapter*** Option
 
 2.1 Command for IP Configuration
 
-- Configuration File of ***Core Network - VM#1***
+- Configuration File of **Core Network - VM#1**
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
 sudo rm /etc/netplan/00-installer-config.yaml
@@ -90,12 +90,35 @@ sudo cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
 sudo netplan apply
 ~~~
 
-- Configuration File of ***RAN gNodeB - VM#2*** 
+- Configuration File of **RAN gNodeB - VM#2** 
+~~~
+cd ~/simulate_5g_basic_open5gs_ueransim/ran_configuration_file
+sudo rm /etc/netplan/00-installer-config.yaml
 ~~~
 ~~~
-~~~
+sudo cp 00-installer-config-gnodeb.yaml /etc/netplan/00-installer-config.yaml
+sudo netplan apply
 ~~~
 
+- Configuration File of **RAN UE1 - VM#3** 
+~~~
+cd ~/simulate_5g_basic_open5gs_ueransim/ran_configuration_file
+sudo rm /etc/netplan/00-installer-config.yaml
+~~~
+~~~
+sudo cp 00-installer-config-ue1.yaml /etc/netplan/00-installer-config.yaml
+sudo netplan apply
+~~~
+
+- Configuration File of ***RAN UE2 - VM#4*** 
+~~~
+cd ~/simulate_5g_basic_open5gs_ueransim/ran_configuration_file
+sudo rm /etc/netplan/00-installer-config.yaml
+~~~
+~~~
+sudo cp 00-installer-config-ue2.yaml /etc/netplan/00-installer-config.yaml
+sudo netplan apply
+~~~
 
 2.2 Network settings < net.ipv4.ip_forward=1 >
 ~~~
@@ -129,7 +152,7 @@ cp upf.yaml ../../open5gs/install/etc/open5gs/upf.yaml
 
 - WebUI
 
-[Run WebUI](#id-webui) -> ***http://192.168.0.101:3000*** -> Login -> Subscriber Menu -> Click + Button -> Fill ***IMSI*** -> SAVE 
+[Run WebUI](#id-webui) -> **http://192.168.0.101:3000** -> Login -> Subscriber Menu -> Click + Button -> Fill **IMSI** -> SAVE 
 
 > Username : admin <br>
 > Password : 1423
@@ -142,7 +165,28 @@ cp upf.yaml ../../open5gs/install/etc/open5gs/upf.yaml
 
 ### 4. RAN gNodeB (UERANSIM)
 
+- open5gs-gnb.yaml
+~~~
+cd ~/simulate_5g_basic_open5gs_ueransim/ran_configuration_file
+rm ../../UERANSIM/config/open5gs-gnb.yaml
+cp open5gs-gnb.yaml ../../UERANSIM/config/open5gs-gnb.yaml
+~~~
+
 ### 5. RAN UE (UERANSIM)
+
+- open5gs-ue1.yaml
+~~~
+cd ~/simulate_5g_basic_open5gs_ueransim/ran_configuration_file
+rm ../../UERANSIM/config/open5gs-ue.yaml
+cp open5gs-ue1.yaml ../../UERANSIM/config/open5gs-ue.yaml
+~~~
+
+- open5gs-ue1.yaml
+~~~
+cd ~/simulate_5g_basic_open5gs_ueransim/ran_configuration_file
+rm ../../UERANSIM/config/open5gs-ue.yaml
+cp open5gs-ue1.yaml ../../UERANSIM/config/open5gs-ue.yaml
+~~~
 
 ---
 
