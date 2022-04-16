@@ -26,12 +26,13 @@
 | Connectivity     | Intel(R) Wi-Fi 6 AX201 160MHz                  |
 
 ### Software Used
-| Software      | Version                 |
-| -----------   | -----------             |
-| VirsualBox    | VirtualBox 6.1          |
-| Open5GS       | Updated Jan, 2022       |
-| UERANSIM      | Release v3.2.5          |
-| Ubuntu Server | Ubuntu Server 20.04 LTS |
+| Software        | Version                     |
+| -----------     | -----------                 |
+| VirsualBox      | VirtualBox 6.1              |
+| Open5GS         | Updated Jan, 2022           |
+| UERANSIM        | Release v3.2.5              |
+| Ubuntu Server   | Ubuntu Server 20.04 LTS     |
+| Ubuntu Desktop  | Ubuntu Desktop 20.04.4 LTS  |
 
 ---
 
@@ -69,12 +70,12 @@ git clone https://github.com/porrama/simulate_5g_basic_open5gs_ueransim
 
 Setting -> Network -> Choose the Adapter and ***Enable Network Adapter*** Option
 
-| Virsual Box Number | Role             | Adapter                                   |
-| -----------        | -----------      | -----------                               |
-| VM#1               | Core Network     | #1 Host Only Adapter <br> #2 NAT Network  |
-| VM#2               | RAN gNodeB       | #1 Host Only Adapter                      |
-| VM#3               | RAN UE 1         | #1 Host Only Adapter                      |
-| VM#4               | RAN UE 2         | #1 Host Only Adapter                      |
+| Virsual Box Number | Role             | Adapter                                   | Operation System  |
+| -----------        | -----------      | -----------                               | -----------       |
+| VM#1               | Core Network     | #1 Host Only Adapter <br> #2 NAT Network  | Ubuntu Server     |
+| VM#2               | RAN gNodeB       | #1 Host Only Adapter                      | Ubuntu Server     |
+| VM#3               | RAN UE 1         | #1 Host Only Adapter                      | Ubuntu Desktop    |
+| VM#4               | RAN UE 2         | #1 Host Only Adapter                      | Ubuntu Desktop    |
 
 ### 2. IP Setting
 
