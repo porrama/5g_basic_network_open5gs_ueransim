@@ -79,8 +79,6 @@ Setting -> Network -> Choose the Adapter and ***Enable Network Adapter*** Option
 
 ### 2. IP Setting
 
-2.1 Command for IP Configuration
-
 - Configuration File of **Core Network - VM#1**
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
@@ -98,26 +96,6 @@ sudo rm /etc/netplan/00-installer-config.yaml
 ~~~
 ~~~
 sudo cp 00-installer-config-gnodeb.yaml /etc/netplan/00-installer-config.yaml
-sudo netplan apply
-~~~
-
-- Configuration File of **RAN UE1 - VM#3** 
-~~~
-cd ~/simulate_5g_basic_open5gs_ueransim/ran_configuration_file
-sudo rm /etc/netplan/00-installer-config.yaml
-~~~
-~~~
-sudo cp 00-installer-config-ue1.yaml /etc/netplan/00-installer-config.yaml
-sudo netplan apply
-~~~
-
-- Configuration File of **RAN UE2 - VM#4**
-~~~
-cd ~/simulate_5g_basic_open5gs_ueransim/ran_configuration_file
-sudo rm /etc/netplan/00-installer-config.yaml
-~~~
-~~~
-sudo cp 00-installer-config-ue2.yaml /etc/netplan/00-installer-config.yaml
 sudo netplan apply
 ~~~
 
