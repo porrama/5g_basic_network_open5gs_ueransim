@@ -85,7 +85,11 @@ cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
 sudo rm /etc/netplan/00-installer-config.yaml
 ~~~
 ~~~
-sudo cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
+sudo cp 00-installer-config-control.yaml /etc/netplan/00-installer-config.yaml
+sudo netplan apply
+~~~
+~~~
+sudo cp 00-installer-config-user.yaml /etc/netplan/00-installer-config.yaml
 sudo netplan apply
 ~~~
 
@@ -191,7 +195,11 @@ sudo sh ~/install_open5gs/runnfv_open5gs.sh
 Run **runwebui_open5gs.sh** 
 ~~~
 cd ~/open5gs/webui
-sudo sh ~/install_open5gs/runwebui_open5gs.sh
+sudo sh ~/install_open5gs/runwebui_open5gs_control.sh
+~~~
+~~~
+cd ~/open5gs/webui
+sudo sh ~/install_open5gs/runwebui_open5gs_user.sh
 ~~~
 
 Run **gNodeB**
