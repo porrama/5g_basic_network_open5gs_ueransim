@@ -178,6 +178,11 @@ rm ../../UERANSIM/config/open5gs-ue.yaml
 cp open5gs-ue1.yaml ../../UERANSIM/config/open5gs-ue.yaml
 ~~~
 
+- set default interface
+~~~
+sudo route add default gw 10.45.0.2
+~~~
+
 ---
 
 <div id='id-testing'/>
