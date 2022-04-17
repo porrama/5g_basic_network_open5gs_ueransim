@@ -438,7 +438,7 @@ nrf:
 #
 upf:
     pfcp:
-      - addr: 127.0.0.7
+      - addr: 192.168.0.112
         dnn: internet
 
 #
