@@ -186,12 +186,12 @@ cp open5gs-ue1.yaml ../../UERANSIM/config/open5gs-ue.yaml
 
 Run **runnfv_open5gs.sh**
 ~~~
-cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
-sudo sh runnfv_open5gs_control.sh
+cd ~/open5gs/install/bin
+sudo sh ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file/runnfv_open5gs_control.sh
 ~~~ 
 ~~~
-cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
-sudo sh runnfv_open5gs_user.sh
+cd ~/open5gs/install/bin
+sudo sh ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file/runnfv_open5gs_user.sh
 ~~~ 
 
 <div id='id-webui'/>
