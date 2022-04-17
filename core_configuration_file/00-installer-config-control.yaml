@@ -5,5 +5,3 @@ network:
         enp0s3:
             addresses: [192.168.0.111/24]
             dhcp4: false
-        enp0s8:
-            dhcp4: true
