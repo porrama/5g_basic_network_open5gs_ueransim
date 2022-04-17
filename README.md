@@ -129,6 +129,13 @@ sudo rm /etc/sysctl.conf
 sudo cp sysctl.conf /etc/sysctl.conf
 ~~~
 
+- ogstun interface
+~~~
+cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
+sudo sh ogstuni.sh
+~~~
+
+
 - WebUI
 
 [Run WebUI](#id-webui) -> **http://192.168.0.101:3000** -> Login -> Subscriber Menu -> Click + Button -> Fill **IMSI** -> SAVE 
