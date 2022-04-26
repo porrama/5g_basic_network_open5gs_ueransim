@@ -28,7 +28,7 @@
 ### Software Used
 | Software        | Version                     |
 | -----------     | -----------                 |
-| VirsualBox      | VirtualBox 6.1              |
+| VirtualBox      | VirtualBox 6.1              |
 | Open5GS         | Updated Jan, 2022           |
 | UERANSIM        | Release v3.2.5              |
 | Ubuntu Server   | Ubuntu Server 20.04 LTS     |
