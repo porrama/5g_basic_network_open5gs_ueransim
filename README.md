@@ -142,7 +142,7 @@ sudo sh ogstuni.sh
 
 - WebUI
 
-[Run WebUI](#id-webui) -> **http://192.168.0.101:3000** -> Login -> Subscriber Menu -> Click + Button -> Fill **IMSI** -> SAVE 
+[Run WebUI](#id-webui) -> **http://192.168.157.111:3000** -> Login -> Subscriber Menu -> Click + Button -> Fill **IMSI** -> SAVE 
 
 > Username : admin <br>
 > Password : 1423
