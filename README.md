@@ -70,30 +70,33 @@ git clone https://github.com/porrama/simulate_5g_basic_open5gs_ueransim
 
 Setting -> Network -> Choose the Adapter and ***Enable Network Adapter*** Option
 
-| Virsual Box Number | Role             | Adapter                                   | Operation System  |
-| -----------        | -----------      | -----------                               | -----------       |
-| VM#1               | Core Network     | #1 Host Only Adapter <br> #2 NAT Network  | Ubuntu Server     |
-| VM#2               | RAN gNodeB       | #1 Host Only Adapter                      | Ubuntu Server     |
-| VM#3               | RAN UE 1         | #1 Host Only Adapter                      | Ubuntu Desktop    |
-| VM#4               | RAN UE 2         | #1 Host Only Adapter                      | Ubuntu Desktop    |
+| Virsual Box Number | Role               | Adapter                                       | Operation System  |
+| -----------        | -----------        | -----------                                   | -----------       |
+| VM#1               | Core Network - CP  | #1 Host Only Adapter                          | Ubuntu Server     |
+| VM#2               | Core Network - UP  | #1 Host Only Adapter <br> #2 #2 NAT Network   | Ubuntu Server     |
+| VM#3               | RAN gNodeB         | #1 Host Only Adapter                          | Ubuntu Server     |
+| VM#4               | RAN UE 1           | #1 Host Only Adapter                          | Ubuntu Desktop    |
+| VM#5               | RAN UE 2           | #1 Host Only Adapter                          | Ubuntu Desktop    |
 
 ### 2. IP Setting
 
-- Configuration File of **Core Network - VM#1**
+- Configuration File of **Core Network - VM#1 and VM#2**
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
 sudo rm /etc/netplan/00-installer-config.yaml
 ~~~
+Core Network - CP (VM#1)
 ~~~
 sudo cp 00-installer-config-control.yaml /etc/netplan/00-installer-config.yaml
 sudo netplan apply
 ~~~
+Core Network - UP (VM#2)
 ~~~
 sudo cp 00-installer-config-user.yaml /etc/netplan/00-installer-config.yaml
 sudo netplan apply
 ~~~
 
-- Configuration File of **RAN gNodeB - VM#2** 
+- Configuration File of **RAN gNodeB - VM#3** 
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/ran_configuration_file
 sudo rm /etc/netplan/00-installer-config.yaml
