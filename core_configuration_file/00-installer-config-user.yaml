@@ -3,7 +3,7 @@ network:
     version: 2
     ethernets:
         ens33:
-            addresses: [192.168.0.112/24]
+            addresses: [192.168.157.112/24]
             dhcp4: false
         ens37:
             dhcp4: true
