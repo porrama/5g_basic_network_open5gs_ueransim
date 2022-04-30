@@ -171,17 +171,23 @@ rm ../../UERANSIM/config/open5gs-ue.yaml
 cp open5gs-ue1.yaml ../../UERANSIM/config/open5gs-ue.yaml
 ~~~
 
-- open5gs-ue1.yaml
+- open5gs-ue2.yaml
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/ran_configuration_file
 rm ../../UERANSIM/config/open5gs-ue.yaml
-cp open5gs-ue1.yaml ../../UERANSIM/config/open5gs-ue.yaml
+cp open5gs-ue2.yaml ../../UERANSIM/config/open5gs-ue.yaml
 ~~~
 
-- set default interface
+- set default interface (UE1)
 ~~~
 sudo route add default gw 10.45.0.2
 ~~~
+
+- set default interface (UE2)
+~~~
+sudo route add default gw 10.45.0.3
+~~~
+
 
 ---
 
