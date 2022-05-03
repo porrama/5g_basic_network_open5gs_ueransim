@@ -40,6 +40,11 @@
 
 ## Network Topology and Simulation Model
 
+<img
+  src="/images/network_overview.jpg"
+  title="Network Overview"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  
 ---
 
 <div id='id-init'/>
