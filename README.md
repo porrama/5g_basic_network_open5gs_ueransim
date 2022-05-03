@@ -73,7 +73,7 @@ Setting -> Network -> Choose the Adapter and ***Enable Network Adapter*** Option
 | Virsual Box Number | Role               | Adapter                                       | Operation System  |
 | -----------        | -----------        | -----------                                   | -----------       |
 | VM#1               | Core Network - CP  | #1 Host Only Adapter                          | Ubuntu Server     |
-| VM#2               | Core Network - UP  | #1 Host Only Adapter <br> #2 #2 NAT Network   | Ubuntu Server     |
+| VM#2               | Core Network - UP  | #1 Host Only Adapter <br> #2 NAT Network      | Ubuntu Server     |
 | VM#3               | RAN gNodeB         | #1 Host Only Adapter                          | Ubuntu Server     |
 | VM#4               | RAN UE 1           | #1 Host Only Adapter                          | Ubuntu Desktop    |
 | VM#5               | RAN UE 2           | #1 Host Only Adapter                          | Ubuntu Desktop    |
@@ -122,6 +122,18 @@ rm ../../open5gs/install/etc/open5gs/smf.yaml
 cp smf.yaml ../../open5gs/install/etc/open5gs/smf.yaml
 ~~~
 
+- WebUI
+
+[Run WebUI](#id-webui) -> **http://192.168.157.111:3000** -> Login -> Subscriber Menu -> Click + Button -> Fill **IMSI** -> SAVE 
+
+> Username : admin <br>
+> Password : 1423
+
+| UE              | IMSI                | DNN                | OP/ OPc            |
+| -----------     | -----------         | -----------        | -----------        |
+| 1               | 001010000000000     | Internet           | OPc                | 
+| 2               | 001010000000001     | Internet           | OPc                |
+
 - User Plane Function (UPF)
 ~~~
 cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
@@ -141,20 +153,6 @@ sudo cp sysctl.conf /etc/sysctl.conf
 cd ~/simulate_5g_basic_open5gs_ueransim/core_configuration_file
 sudo sh ogstuni.sh
 ~~~
-
-
-- WebUI
-
-[Run WebUI](#id-webui) -> **http://192.168.157.111:3000** -> Login -> Subscriber Menu -> Click + Button -> Fill **IMSI** -> SAVE 
-
-> Username : admin <br>
-> Password : 1423
-
-| UE              | IMSI                | DNN                | OP/ OPc            |
-| -----------     | -----------         | -----------        | -----------        |
-| 1               | 001010000000000     | Internet           | OPc                | 
-| 2               | 001010000000001     | Internet           | OPc                |
-
 
 ### 4. RAN gNodeB (UERANSIM)
 
@@ -191,7 +189,6 @@ sudo route add default gw 10.45.0.2
 sudo route add default gw 10.45.0.3
 ~~~
 
-
 ---
 
 <div id='id-testing'/>
@@ -215,7 +212,6 @@ Run **runwebui_open5gs.sh**
 cd ~/open5gs/webui
 sudo sh ~/install_open5gs/runwebui_open5gs.sh
 ~~~
-
 
 Run **gNodeB**
 ~~~
