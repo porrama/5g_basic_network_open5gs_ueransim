@@ -235,8 +235,8 @@ sudo ./nr-ue -c ../config/open5gs-ue.yaml
 <div id='id-reference'/>
 
 ## Reference
-- [Open5GS Documentation](https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources/)
+- [Open5GS Documentation](https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources)
 - [UERANSIM Documentation](https://github.com/aligungr/UERANSIM)
-
+- [s5uishida Project](https://github.com/s5uishida)
 
 ---
