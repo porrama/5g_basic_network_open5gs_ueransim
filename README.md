@@ -194,6 +194,11 @@ sudo route add default gw 10.45.0.2
 sudo route add default gw 10.45.0.3
 ~~~
 
+- set DNS
+~~~
+cat /etc/resolv.conf
+~~~
+
 ---
 
 <div id='id-testing'/>
